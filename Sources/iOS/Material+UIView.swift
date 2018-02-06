@@ -46,20 +46,6 @@ extension UIView {
         }
     }
     
-    /// A property that accesses the layer.borderColor property.
-    @objc
-    open var borderColor: UIColor? {
-        get {
-            guard let v = layer.borderColor else {
-                return nil
-            }
-            return UIColor(cgColor: v)
-        }
-        set(value) {
-            layer.borderColor = value?.cgColor
-        }
-    }
-    
     /// HeightPreset value.
     @objc
     open var heightPreset: HeightPreset {
